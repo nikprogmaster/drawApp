@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.sandrlab.drawapp.MultiView
+            android:id="@+id/draw_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/view_margin" />
+
+        <CheckBox
+        android:id="@+id/scale"
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/checkbox_margin"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:text="@string/scale"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/button_not_pressed"
+        android:padding="@dimen/inner_layout_padding">
+
+        <Spinner
+            android:id="@+id/lines"
+            android:layout_weight="1"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="@dimen/margin_elements"/>
+
+        <ImageButton
+            android:id="@+id/button_multi"
+            android:layout_weight="1"
+            android:src="@drawable/multitouch"
+            android:background="@drawable/button"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_elements"
+            android:text="@string/multi_mode"
+            />
+
+        <ImageButton
+            android:id="@+id/colorButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/color_lens_black_48dp"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            />
+
+        <ImageButton
+            android:id="@+id/clear"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_elements"
+            android:src="@drawable/ic_delete_black_24dp"/>
+    </LinearLayout>
+
+</LinearLayout>

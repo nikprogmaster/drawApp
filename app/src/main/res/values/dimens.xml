@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="inner_layout_padding">8dp</dimen>
+    <dimen name="margin_elements">2dp</dimen>
+    <dimen name="corners">8dp</dimen>
+    <dimen name="button_padding">4dp</dimen>
+    <dimen name="match_constraint">0dp</dimen>
+    <dimen name="checkbox_margin">8dp</dimen>
+    <dimen name="view_margin">40dp</dimen>
+</resources>
